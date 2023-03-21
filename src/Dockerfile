@@ -23,11 +23,12 @@ RUN cd /opt && \
 ENV DEAL_II_DIR /opt/deal.II-v9.4.0
 
 RUN git clone https://github.com/geodynamics/aspect.git ./aspect && \
-    mkdir aspect/build-release && \
-    cd aspect/build-release && \
+    mkdir aspect/build && \
+    cd aspect/build && \
     git checkout main && \
-    cmake -DCMAKE_BUILD_TYPE=Release \
+    cmake -DCMAKE_BUILD_TYPE=DebugRelease \
           -DASPECT_PRECOMPILE_HEADERS=ON \
+          -DASPECT_INSTALL_EXAMPLES=ON \
           .. && \
     make -j8 && \
     make install
