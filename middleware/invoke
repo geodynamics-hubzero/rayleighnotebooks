@@ -4,7 +4,8 @@
 # jupyter tool
 #
 /usr/bin/invoke_app "$@" -t aspectnotebook \
-                         -C "start_jupyter -t -T @tool example.ipynb" \
+                         -e Aspect_DIR=/apps/share64/debian10/aspect/aspect-2.5.0pre \
+                         -C "start_jupyter -t -T @tool /apps/share64/debian10/aspect/aspect-2.5.0pre/benchmarks/onset-of-convection/onset-of-convection.ipynb" \
                          -u anaconda-7 \
                          -u aspect-2.5.0-pre \
                          -r none
