@@ -1,14 +1,14 @@
-Python contributions for ASPECT 
-==============================
+Python contributions for Rayleigh 
+=================================
 
-This folder contains some useful routines to read files with Python,
-using the numpy and pandas packages.
+This folder contains some useful routines to read and plot files with Python,
+using the numpy and matplotplib packages.
 
 To install Python with anaconda: 
 https://www.anaconda.com/distribution/
 
-To create a new environment with numpy, pandas and matplotlib:
->> conda create --name py36 python=3.6 numpy matplotlib pandas 
+To create a new environment with numpy and matplotlib:
+>> conda create --name py36 python=3.6 numpy matplotlib 
 
 To use the jupyter notebook, you will need to install it in your conda environment:
 >> conda install jupyter
