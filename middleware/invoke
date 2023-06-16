@@ -4,7 +4,7 @@
 # jupyter tool
 #
 /usr/bin/invoke_app "$@" -t rayleighnote \
-                         -C "start_jupyterlab -T @tool/bin Diagnostic_Plotting.ipynb" \
+                         -C "start_jupyterlab -T @tool/bin post_processing/Diagnostic_Plotting.ipynb" \
                          -u anaconda-7 \
                          -r none \
                          -w headless
